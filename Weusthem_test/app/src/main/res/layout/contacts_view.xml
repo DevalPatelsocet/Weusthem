@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/contact_view_image"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/contact_view_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="CONTACT NAME"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/contact_view_image"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/contact_view_FN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="First Name"
+        app:layout_constraintStart_toEndOf="@id/contact_view_image"
+        app:layout_constraintTop_toBottomOf="@id/contact_view_name"
+        />
+    <TextView
+        android:id="@+id/contact_view_LN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Last Name"
+        app:layout_constraintStart_toEndOf="@id/contact_view_image"
+        app:layout_constraintTop_toBottomOf="@id/contact_view_FN"
+        />
+    <TextView
+        android:id="@+id/contact_view_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Email Address"
+        app:layout_constraintStart_toEndOf="@id/contact_view_image"
+        app:layout_constraintTop_toBottomOf="@id/contact_view_LN"
+        />
+    <TextView
+        android:id="@+id/contact_view_PHN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Phone Number"
+        app:layout_constraintStart_toEndOf="@id/contact_view_image"
+        app:layout_constraintTop_toBottomOf="@id/contact_view_email"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
